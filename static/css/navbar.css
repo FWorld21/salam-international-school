@@ -1,0 +1,90 @@
+#NavBar {
+    position: fixed;
+}
+
+.navbar {
+    background: #FFFFFF !important;
+}
+
+.navbar-content {
+    width: 100%;
+}
+
+* {
+    font-size: 16px;
+}
+
+.school-logo {
+    height: 70px;
+    width: 110px;
+    margin-left: 50px;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.enroll {
+    margin-right: 50px;
+}
+
+.number {
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1190px) {
+    * {font-size: 14px;}
+    .school-logo {height: 60px;width: 80px;margin-left: 0px;}
+}
+
+@media screen and (min-width: 840px) and (max-width: 990px) {
+    .school-logo {height: 120px;width: 120px;}
+}
+
+@media screen and (max-width: 840px) {
+    .enroll-contact {flex-direction: column;}
+    .nav-item {margin-left: 1px;}
+    #navbarSupportedContent{margin-top: 100px;}
+    .navbar-toggler{margin-top: 20px;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .school-logo {height: 150px; width: 50px; margin-left: 0px; margin-top: -40px;}
+    #navbarSupportedContent{margin-top: 100px;}
+    .navbar-toggler{margin-top: 20px;}
+    .nav-item {margin-left: 0px;}
+    .enroll {margin-right: 0px;}
+    .number {margin-right: 0px;}
+}
+
+.langs {
+    margin-top: 5px;
+}
+
+.nav-link {
+    font-family: Bookman Old Style;
+    font-style: normal;
+    font-weight: 300;
+    color: #002F61 !important;
+}
+
+.nav-link:hover {
+    font-family: Bookman Old Style;
+    font-style: normal;
+    font-weight: 300;
+    color: #FFFFFF !important;
+    background: #FFB300;
+    border-radius: 4px;
+}
+
+.lang-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.lang-link:hover {
+    color: #FFFFFF !important;
+    background: #FFB300;
+    border-radius: 4px;
+}

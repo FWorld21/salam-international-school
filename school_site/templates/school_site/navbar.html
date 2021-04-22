@@ -1,0 +1,175 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<nav class="container-fluid text-center navbar navbar-expand-lg navbar-light bg-light" id="NavBar">
+    <div class="d-flex navbar-content navbar-div">
+        <img src="{% static 'img/Salam logo colored.svg' %}" alt="navbar-logo" class="school-logo">
+        <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% if page == 'home' %}
+                    {% if lang == 'ru' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'home_ru' %}" style="border-radius: 5px; color: #FFFFFF !important;">Школа Salam</a>
+                        </li>
+                    {% elif lang == 'en' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'home_en' %}" style="border-radius: 5px; color: #FFFFFF !important;">Salam School</a>
+                        </li>
+                    {% elif lang == 'uz' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'home_uz' %}" style="border-radius: 5px; color: #FFFFFF !important;">Salam Maktab</a>
+                        </li>
+                    {% endif %}
+                {% else %}
+                    {% if lang == 'ru' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'home_ru' %}">Школа Salam</a>
+                        </li>
+                    {% elif lang == 'en' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'home_en' %}">Salam School</a>
+                        </li>
+                    {% elif lang == 'uz' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'home_uz' %}">Salam Maktab</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+
+                {% if page == 'circles' %}
+                    {% if lang == 'ru' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'circles_ru' %}" style="border-radius: 5px; color: #FFFFFF !important;">Кружки</a>
+                        </li>
+                    {% elif lang == 'en' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'circles_en' %}" style="border-radius: 5px; color: #FFFFFF !important;">Leisure activities</a>
+                        </li>
+                    {% elif lang == 'uz' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'circles_uz' %}" style="border-radius: 5px; color: #FFFFFF !important;">To‘garaklar</a>
+                        </li>
+                    {% endif %}
+                {% else %}
+                    {% if lang == 'ru' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'circles_ru' %}">Кружки</a>
+                        </li>
+                    {% elif lang == 'en' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'circles_en' %}">Leisure activities</a>
+                        </li>
+                    {% elif lang == 'uz' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'circles_uz' %}">To‘garaklar</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+
+                {% if page == 'teachers' %}
+                    {% if lang == 'ru' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'teachers_ru' %}" style="border-radius: 5px; color: #FFFFFF !important;">Наши педагоги</a>
+                        </li>
+                    {% elif lang == 'en' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'teachers_en' %}" style="border-radius: 5px; color: #FFFFFF !important;">Our teachers</a>
+                        </li>
+                    {% elif lang == 'uz' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link btn-warning" aria-current="page" href="{% url 'teachers_uz' %}" style="border-radius: 5px; color: #FFFFFF !important;">O‘qitivchilarimiz</a>
+                        </li>
+                    {% endif %}
+                {% else %}
+                    {% if lang == 'ru' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'teachers_ru' %}">Наши педагоги</a>
+                        </li>
+                    {% elif lang == 'en' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'teachers_en' %}">Our teachers </a>
+                        </li>
+                    {% elif lang == 'uz' %}
+                        <li class="nav-item">
+                            <a class="main-nav-link nav-link" aria-current="page" href="{% url 'teachers_uz' %}">O‘qitivchilarimiz</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <div class="ms-auto right-navbar-side">
+                <div class="enroll-contact d-flex">
+                    {% if lang == 'ru' %}
+                        <a href="{% url 'call-request_ru' %}" class="enroll btn btn-warning">Заявка на звонок</a>
+                    {% elif lang == 'en' %}
+                        <a href="{% url 'call-request_en' %}" class="enroll btn btn-warning">Call request</a>
+                    {% elif lang == 'uz' %}
+                        <a href="{% url 'call-request_uz' %}" class="enroll btn btn-warning">Qo‘ng‘iroq uchun morojaat</a>
+                    {% endif %}
+                    <span class="number">+998 95 177 36 36</span> <br>
+                    <div class="langs">
+                        {% if lang == 'ru' %}
+                            {% if page == 'home' %}
+                                <a href="{% url 'home_ru' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">RU</a>
+                                <a href="{% url 'home_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'home_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% elif page == 'circles' %}
+                                <a href="{% url 'circles_ru' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">RU</a>
+                                <a href="{% url 'circles_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'circles_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% elif page == 'teachers' %}
+                                <a href="{% url 'teachers_ru' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">RU</a>
+                                <a href="{% url 'teachers_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'teachers_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% elif page == 'call-request' %}
+                                <a href="{% url 'call-request_ru' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">RU</a>
+                                <a href="{% url 'call-request_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'call-request_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% endif %}
+                        {% elif lang == 'en' %}
+                            {% if page == 'home' %}
+                                <a href="{% url 'home_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'home_en' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">EN</a>
+                                <a href="{% url 'home_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% elif page == 'circles' %}
+                                <a href="{% url 'circles_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'circles_en' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">EN</a>
+                                <a href="{% url 'circles_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% elif page == 'teachers' %}
+                                <a href="{% url 'teachers_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'teachers_en' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">EN</a>
+                                <a href="{% url 'teachers_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% elif page == 'call-request' %}
+                                <a href="{% url 'call-request_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'call-request_en' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">EN</a>
+                                <a href="{% url 'call-request_uz' %}" class="p-1 lang-link">UZ</a>
+                            {% endif %}
+                        {% elif lang == 'uz' %}
+                            {% if page == 'home' %}
+                                <a href="{% url 'home_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'home_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'home_uz' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">UZ</a>
+                            {% elif page == 'circles' %}
+                                <a href="{% url 'circles_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'circles_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'circles_uz' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">UZ</a>
+                            {% elif page == 'teachers' %}
+                                <a href="{% url 'teachers_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'teachers_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'teachers_uz' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">UZ</a>
+                            {% elif page == 'call-request' %}
+                                <a href="{% url 'call-request_ru' %}" class="p-1 lang-link">RU</a>
+                                <a href="{% url 'call-request_en' %}" class="p-1 lang-link">EN</a>
+                                <a href="{% url 'call-request_uz' %}" class="p-1 lang-link btn-warning" style="border-radius: 4px;">UZ</a>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ms-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</nav>

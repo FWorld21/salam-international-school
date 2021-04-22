@@ -1,0 +1,475 @@
+.section-page-content {
+    background: url("../img/book-with-green-board-background 1.jpg");
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-1 {
+    margin-top:auto;
+    max-width: 100%;
+    background: rgb(0, 47, 97, 0.7);
+    font-family: Bookman Old Style;
+    color: #FFFFFF;
+    border-radius: 5px;
+    max-width: 846px;
+}
+
+.text-content {
+    padding: 4%;
+}
+
+.enroll-button {
+    display: inline-block;
+    margin-top: 15%;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.links {
+    right: 100px;
+    position: absolute;
+}
+
+.about-school-div {
+    margin-top:auto;
+}
+
+.about-school-icon-img {
+    padding: 5px;
+}
+
+.about-school-icon, .about-school-link {
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.about-school-link {
+    padding: 5px;
+    text-decoration: none;
+    color: #002F61;
+    font-size: 16px;
+    font-family: Bookman Old Style;
+}
+
+.links-container {
+    background: #FFFFFF;
+    list-style-type: none;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    padding: 5px 15px;
+}
+
+.links-container a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.link-item {
+    margin-bottom: 8px;
+}
+
+.link-item:last-child {
+    margin-bottom: 0px;
+}
+
+.link-href:hover {
+    color: #FFFFFF;
+    background: #002F61;
+    border-radius: 20px;
+}
+
+.link-active a {
+    color: #FFFFFF;
+    background: #002F61;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 1920px) {
+    .section-page-content {background-repeat: round;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .desc-1 {max-width: 500px}
+    .links {right: 50px;}
+}
+
+@media screen and (min-width: 990px) and (max-width: 1144px) {
+    .desc-1 {max-width: 700px}
+    .links {right: 50px;}
+}
+
+@media screen and (min-width: 556px) and (max-width: 768px) {
+    .desc-1 {max-width: 450px}
+    .links {display: none}
+}
+
+@media screen and (min-width: 360px) and (max-width: 556px) {
+    .desc-1 {max-width: 350px}
+    .links {display: none}
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .desc-1 {max-width: 320px;}
+    .text-content h1 {font-size: 24px;}
+    .text-content p {font-size: 14px;}
+    .links {display: none}
+}
+
+@media screen and (min-height: 158px) and (max-height: 412px) {
+    .enroll-button {display: none;}
+}
+
+.section-page-2 {
+    background: #002F61;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-school-heading {
+    margin-bottom: 30px;
+}
+
+.about-school-heading h2 {
+    color: #002F61;
+    background: #FFFFFF;
+    font-family: Bookman Old Style;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+}
+
+.desc-2 {
+    max-width: 100%;
+    font-family: Bookman Old Style;
+    color: #FFFFFF;
+    max-width: 1200px;
+}
+
+.text-content-2 {
+    font-size: 14px;
+}
+
+.card-img {
+    max-width: 166px;
+}
+
+
+.about-school-div {
+    margin-top:auto;
+}
+
+.about-school-icon-img {
+    padding: 5px;
+}
+
+.about-education-icon, .about-education-link {
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.about-education-link {
+    padding: 5px;
+    text-decoration: none;
+    color: #002F61;
+    font-size: 16px;
+    font-family: Bookman Old Style;
+}
+
+.about-education-div {
+    margin-top:auto;
+}
+
+.about-education-icon-img {
+    padding: 5px;
+}
+
+.spacer-section-div {
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 1320px) and (max-width: 1540px) {
+    .card-img {width: 120px;}
+    .card-text {font-size: 13px;}
+    .text-content-2 {width: 800px;}
+}
+
+@media screen and (min-width: 1320px) and (max-width: 1540px) {
+    .card-img {width: 120px;}
+    .card-text {font-size: 13px;}
+    .text-content-2 {width: 800px;}
+}
+
+@media screen and (min-width: 1002px) and (max-width: 1314px) {
+    .card-img {width: 110px;}
+    .card-text {font-size: 13px;}
+    .text-content-2 {width: 600px;}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1002px) {
+    .card-img {width: 80px;}
+    .card-text {font-size: 12px;}
+    .text-content-2 {width: 600px;}
+    .spacer-section-div {margin-top: 3%;}
+}
+
+@media screen and (min-width: 506px) and (max-width: 800px) {
+    .card-img {width: 166px;}
+    .card-text {font-size: 14px;}
+    .text-content-2 {width: 400px;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 506px) {
+    .card-img {width: 120px;}
+    .card-text {font-size: 14px;}
+}
+
+@media screen and (min-height: 77px) and (max-height: 733px) {
+    .card-text {font-size: 14px;}
+}
+
+.section-page-3 {
+    background: #FFFFFF
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-education-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-education-heading h2 {
+    color: #FFFFFF;
+    background: #002F61;
+    font-family: Bookman Old Style;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+    .reverse-row {flex-direction: column-reverse}
+}
+
+.desc-section-3 {
+    font-size: 13px;
+    padding: 8%;
+    margin-top: auto;
+}
+
+.links-container-section-3 {
+    background: #FFB300;
+    list-style-type: none;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    padding: 5px 15px;
+}
+
+
+.about-food-icon, .about-food-link {
+    background: #FFB300;
+    border: 2px solid #FFB300;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.about-food-link {
+    padding: 5px;
+    text-decoration: none;
+    color: #002F61;
+    font-size: 16px;
+    font-family: Bookman Old Style;
+}
+
+.about-food-div {
+    margin-top:auto;
+}
+
+.about-food-icon-img {
+    padding: 5px;
+}
+
+.third-section-img {
+    max-width: 98%;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+    .first-section-desc {padding-right: 20%;}
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1400px) {
+    .third-section-img {width: 80%;}
+    .first-section-desc {padding-right: 30%;}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
+    .third-section-img {width: 70%;}
+    .first-section-desc {padding-right: 40%;}
+}
+
+@media screen and (min-width: 770px) and (max-width: 1000px) {
+    .third-section-img {width: 80%;}
+    .first-section-desc {padding-right: 30%;}
+}
+
+.section-page-4 {
+    background: url("../img/Питание.jpg");
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1920px) {
+    .section-page-4 {background-repeat: round;}
+}
+
+.about-food-heading {
+    margin-bottom: 30px;
+}
+
+.about-food-heading h2 {
+    color: #002F61;
+    background: #FFFFFF;
+    font-family: Bookman Old Style;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+}
+
+.description-food {
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 35%;
+    margin-left: 35%;
+    margin-top:auto
+}
+
+.description-food p {
+    font-size: 14px;
+}
+
+.about-event-icon, .about-event-link {
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 15%;
+}
+
+.about-event-link {
+    padding: 5px;
+    text-decoration: none;
+    color: #002F61;
+    font-size: 16px;
+    font-family: Bookman Old Style;
+}
+
+.about-event-div {
+    margin-top:auto;
+}
+
+.about-event-icon-img {
+    padding: 5px;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1440px) {
+    .section-page-4 {background-position: -100px 0;}
+}
+@media screen and (min-width: 1080px) and (max-width: 1300px) {
+    .section-page-4 {background-position: -250px 0;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .section-page-4 {background-position: -500px 0;}
+    .description-food {max-width: 60%;margin-left: 0%;margin-top: 0%}
+}
+
+@media screen and (max-width: 768px) {
+    .section-page-4 {background-position: -550px 0;}
+    .description-food {max-width: 80%;margin-left: 0%;margin-top: 0%}
+}
+
+.section-page-5 {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-events-heading {
+    padding-bottom: 50px;
+}
+
+.spacer-div {
+    margin-top: 5%;
+}
+
+@media screen and (min-height: 450px) and (max-height: 590px) {
+.spacer-div {
+    margin-top: 0%;
+}
+}
+
+.about-events-heading h2 {
+    color: #FFFFFF;
+    background: #002F61;
+    font-family: Bookman Old Style;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+}
+
+.desc-section-5 {
+    font-size: 14px;
+}
+
+
+.links-container-section-5 {
+    background: #002F61;
+    list-style-type: none;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    padding: 5px 15px;
+}
+
+.link-href-section-5 {
+    color: #FFFFFF !important;
+}
+
+.link-href-section-5:hover {
+    color: #FFFFFF;
+    background: #FFB300;
+    border-radius: 20px;
+}
+
+.link-active-section-5 {
+    color: #FFFFFF;
+    background: #FFB300;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1662px) {
+    .desc-section-5 {width: 80%;}
+}

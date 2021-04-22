@@ -1,0 +1,23 @@
+{% extends 'school_site/base.html' %}
+{% load static %}
+{% block title %}
+    {% if lang == 'ru' %}
+        Наши педагоги
+    {% elif lang == 'en' %}
+        Our teachers
+    {% elif lang == 'uz' %}
+        O‘qitivchilarimiz
+    {% endif %}
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/our teachers.css' %}">
+    <header>
+        {% include 'school_site/navbar.html' %}
+    </header>
+    <main>
+        {% include 'school_site/teachers-section.html' %}
+    </main>
+    <footer>
+        {% include 'school_site/footer.html' %}
+    </footer>
+{% endblock %}

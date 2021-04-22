@@ -1,0 +1,479 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/section_page.css' %}">
+<div class="section-page-content" id="Section-1">
+    <div class="desc-1 text-center">
+        <div class="text-content">
+            <h1>
+                Salam International<br> School
+            </h1>
+            <p>
+                {% if lang == 'ru' %}
+                    Образовательное учреждение, которое идеально подойдет именно для Вашего ребенка.
+                    Данная школа рассчитана на 11-летнюю систему обучения, в течение которой Ваш ребенок
+                    будет углубленно изучать иностранные языки и точные науки. Все это воспроизводится
+                    на основе эффективных педагогических технологий. Важно отметить, что мы отводим
+                    отдельное внимание на правильное нравственное воспитание ребенка, касающееся этикета,
+                    уважения к родителям и духа патриотизма.
+                    <br><br>
+                    Обучать своего ребенка у нас – значит сделать правильный выбор в пользу его светлого будущего!
+                {% elif lang == 'en' %}
+                    Salam School is an educational establishment that will perfectly fit both yours and
+                    your kid‘s interests. Our school is based on 11 years of studies, in the duration of
+                    which your child will be encouraged to master foreign languages as well as study exact
+                    sciences. All the educational process is carried out on the basis of effective
+                    pedagogical methods. It is significant to mention that moral education (ethics,
+                    impeccable upbringing, respectful behavior towards parents, nationalism) is regarded
+                    as an essential aspect.
+                    <br><br>
+                    Educating your offspring in our school means making considerable contribution into
+                    one's bright future.
+                {% elif lang == 'uz' %}
+                    Salam maktabi sizning farzandingiz uchun ideal bo'lgan ta'lim 
+                    muassasasidir. Ushbu maktab 11 yillik ta'lim tizimiga mo'ljallangan bo'lib, 
+                    uning davomida farzandingiz chet tillari va aniq fanlarni chuqur o'rganadi. 
+                    Bularning barchasi samarali pedagogik texnologiyalar asosida amalga 
+                    oshiriladi. Shuni ta'kidlash kerakki, biz odob-axloq qoidalari, ota-onalarga 
+                    hurmat va vatanparvarlik ruhida bolani to'g'ri axloqiy tarbiyalashga 
+                    alohida e'tibor qaratamiz. 
+                    <br><br>
+                    Agar siz farzandingizni bizning maktabimizda o‘qitsangiz, demak siz 
+                    uning kelajagiga katta hissa qo'shasiz.
+                {% endif %}
+            </p>
+        </div>
+    </div>
+
+    <div>
+        {% if lang == 'ru' %}
+            <a href="{% url 'call-request_ru' %}" class="btn-light enroll-button">
+                Заявка на звонок
+            </a>
+        {% elif lang == 'en' %}
+            <a href="{% url 'call-request_en' %}" class="btn-light enroll-button">
+                Call request
+            </a>
+        {% elif lang == 'uz' %}
+            <a href="{% url 'call-request_uz' %}" class="btn-light enroll-button">
+                Qo‘ng‘iroq uchun morojaat
+            </a>
+        {% endif %}
+    </div>
+
+    <div class="links text-white">
+        <div class="container links-container">
+            <div class="link-item link-active row"><a class="link-href" href="#">1</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-2">2</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-3">3</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-4">4</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-5">5</a></div>
+        </div>
+    </div>
+
+    <div class="about-school-div d-flex">
+        <a class="about-school-icon" href="" data-scroll="#Section-2">
+            <img class="about-school-icon-img" src="{% static 'img/about school.svg' %}" alt="">
+        </a>
+        <a class="about-school-link" href="#" data-scroll="#Section-2">
+            {% if lang == 'ru' %}
+                О школе
+            {% elif lang == 'en' %}
+                About school
+            {% elif lang == 'uz' %}
+                Maktab haqida
+            {% endif %}
+        </a>
+    </div>
+    <div class="mb-5"></div>
+</div>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SECOND CONTENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<div class="section-page-2" id="Section-2">
+    <div class="my-5"></div>
+    <div class="about-school-heading">
+        <h2>
+            {% if lang == 'ru' %}
+                О школе
+            {% elif lang == 'en' %}
+                About school
+            {% elif lang == 'uz' %}
+                Maktab haqida
+            {% endif %}
+        </h2>
+    </div>
+    <div class="desc-2 text-center">
+        <div class="text-content-2">
+            <p>
+                {% if lang == 'ru' %}
+                    Являясь партнером таких крупных зарубежных корпораций, как MacMillan и Oxford Press,
+                    наша школа отбирает только самых лучших преподавателей иностранцев. А способность
+                    каждого ученика мыслить самостоятельно и свободно выражать свои мысли формируется
+                    профессиональным психологом и преподавателями с зарубежным опытом. Также в нашей школе
+                    доступны услуги врачей, психологов и логопедов, а о здоровье малышей и их питании
+                    заботится команда высококвалифицированных специалистов.
+                {% elif lang == 'en' %}
+                    Being a partner of major and leading foreign corporations as MacMillan and Oxford
+                    Press, our establishment is extremely selective in terms of hiring teachers (solely
+                    the best ones work in our place). Additionally, highly-qualified psychologists and
+                    well trained professionals exert lots of forces to form an ability in child to think
+                    differently and independently. Besides, there are school therapists, medical advisors
+                    and logopedists available in our school. As for pupils' health and nutrition, a
+                    team of specialists take that under their control.
+                {% elif lang == 'uz' %}
+                    MacMillan va Oxford Press kabi yirik xorijiy korporatsiyalarning hamkori 
+                    sifatida bizning maktabimiz faqat eng yaxshi chet el o'qituvchilarini tanlaydi. 
+                    Va har bir o‘quvchining mustaqil fikrlash va o'z fikrlarini erkin bayon qilish 
+                    qobiliyatini professional psixolog va xorijiy tajribaga ega o'qituvchilar 
+                    shakllantiradi. Shuningdek, bizning maktabimizda shifokorlar, psixologlar va 
+                    nutq terapevtlari xizmatlari mavjud. Yuqori malakali mutaxassislar guruhi esa 
+                    bolalarning sog'lig'i va ularning sog'lom ovqatlanishini nazorat qiladi.
+                {% endif %}
+            </p>
+        </div>
+    </div>
+    <div class="spacer-section-div"></div>
+    <div class="container cards-images">
+        <div class="row text-center text-white">
+            {% if lang == 'ru' %}
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 1.svg' %}" alt="trigger">
+                    <p class="card-text">Профессиональные учителя</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 2.svg' %}" alt="trigger">
+                    <p class="card-text">Вкусное 3х разовое питание</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 3.svg' %}" alt="trigger">
+                    <p class="card-text">Разнообразные мероприятия</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 4.svg' %}" alt="trigger">
+                    <p class="card-text">Занятия по Гимнастике и Этике</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 5.svg' %}" alt="trigger">
+                    <p class="card-text">Изучение Английского и Арабскго языка</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 6.svg' %}" alt="trigger">
+                    <p class="card-text">Направления по IT и Математике</p>
+                </div>
+            {% elif lang == 'en' %}
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 1.svg' %}" alt="trigger">
+                    <p class="card-text">Highly-qualified teachers</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 2.svg' %}" alt="trigger">
+                    <p class="card-text">Meal serving three times a day</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 3.svg' %}" alt="trigger">
+                    <p class="card-text">Variety of events</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 4.svg' %}" alt="trigger">
+                    <p class="card-text">Gymnastics and Ethics</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 5.svg' %}" alt="trigger">
+                    <p class="card-text">Learning English and Arabic</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 6.svg' %}" alt="trigger">
+                    <p class="card-text">IT and Maths</p>
+                </div>
+            {% elif lang == 'uz' %}
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 1.svg' %}" alt="trigger">
+                    <p class="card-text">Malakali ustozlar</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 2.svg' %}" alt="trigger">
+                    <p class="card-text">Kuniga 3 marta ovqatlanish</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 3.svg' %}" alt="trigger">
+                    <p class="card-text">Turli tadbirlar</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 4.svg' %}" alt="trigger">
+                    <p class="card-text">Gimnastika va Tarbiya darslari</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 5.svg' %}" alt="trigger">
+                    <p class="card-text">Ingliz va Arab tillarini o‘rganish</p>
+                </div>
+                <div class="col">
+                    <img class="card-img" src="{% static 'img/Триггер 6.svg' %}" alt="trigger">
+                    <p class="card-text">IT va Matematika yo‘nalishlari</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="links text-white">
+        <div class="container links-container">
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-1">1</a></div>
+            <div class="link-item link-active row"><a class="link-href" href="#" data-scroll="#Section-2">2</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-3">3</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-4">4</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-5">5</a></div>
+        </div>
+    </div>
+    <div class="my-3"></div>
+    <div class="about-education-div d-flex">
+        <a class="about-education-icon" href="" data-scroll="#Section-3"><img class="about-school-icon-img" src="{% static 'img/about education.svg' %}" alt=""></a>
+        <a class="about-education-link" href="" data-scroll="#Section-3">
+            {% if lang == 'ru' %}
+                Образование
+            {% elif lang == 'en' %}
+                Education
+            {% elif lang == 'uz' %}
+                Ta‘lim
+            {% endif %}
+        </a>
+    </div>
+    <div class="mb-5"></div>
+</div>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! THIRD CONTENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<div class="section-page-3" id="Section-3">
+    <div class="about-education-heading">
+        <h2>
+            {% if lang == 'ru' %}
+                Образование
+            {% elif lang == 'en' %}
+                Education
+            {% elif lang == 'uz' %}
+                Ta‘lim
+            {% endif %}
+        </h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <img class="third-section-img" src="{% static 'img/smiley-teacher-helping-students-class 1.svg' %}"
+                     alt="smiley-teacher-helping-students-class 1">
+            </div>
+            <div class="col-md desc-section-3-div">
+                <p class="desc-section-3 first-section-desc text-center">
+                    {% if lang == 'ru' %}
+                        Учебный день в нашей школе длится с 8:30 до 17:00.
+                        Поэтому, отправляя ребенка к нам, вы можете быть
+                        спокойны за его развитие и полную безопасность в
+                        течении всего дня. В одном классе у нас позволительно
+                        от 15 до 20 учеников (не более) для лучшей и более
+                        эффективной работы с ними. Домашнее задание же
+                        выполняется в полном объеме.
+                    {% elif lang == 'en' %}
+                        Schooling is conducted within entire day from
+                        8:30 a.m to 5:00 p.m. Therefore you feel secure for
+                        child's well being and safety all day long. Acceptable amount
+                        of students in each class is evaluated from 15 to 20, since it
+                        allows us to work much more efficiently with students. When it
+                        comes to homework, all the tasks are carried out in proper way.
+                    {% elif lang == 'uz' %}
+                        Maktabimizda o'quv kuni soat 8:30 dan 17:00 gacha davom etadi.
+                        Shuning uchun, farzandingizni bizga yuborib, uning rivojlanishiga
+                        va kun bo'yi to'liq xavfsizligiga xotirjam bo'lishingiz mumkin.
+                        Bir sinfda o‘quvchilarning soni 15–20 dan oshmaydi. Uy vazifasi
+                        esa to'liq hajmda bajariladi.
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="row reverse-row">
+            <div class="col-md">
+                <p class="desc-section-3 text-center">
+                    {% if lang == 'ru' %}
+                        Наша школа специализируется на 3 направлениях: Иностранные языки
+                        (Английский, Арабский), Спорт (ритмическая и спортивная гимнастика),
+                        Математика и IT-сфера. Учебный процесс осуществляется в виде интерактивных
+                        игр для полного развития детей. Различные игры, уроки ритмики и физическая
+                        гимнастика включены в специально разработанную программу. Эта программа
+                        помогает нам в достижении эффективнейшего результата в обучении детей.
+                    {% elif lang == 'en' %}
+                        There are 3 major disciplines that our school specializes at – Foreign
+                        languages   (English, Arabic), Sports (physical and rhythmic gymnastics),
+                        Mathematics and IT. The educational process is carried out in the form of
+                        interactive games for the full development of children. Various games,
+                        rhythm lessons and physical gymnastics are included in a specially composed
+                        educational program. Such tools help us in achieving the most effective results
+                        in educating students.
+                    {% elif lang == 'uz' %}
+                        Maktabimiz uchta yo'nalishga ixtisoslashgan: Chet tillari (Ingliz, Arab),
+                        Sport (badiiy va sport gimnastikasi), Matematika va IT. Ta'lim jarayoni
+                        bolalarning har tomonlama rivojlanishi uchun interaktiv o'yinlar shaklida
+                        amalga oshiriladi. Har xil o'yinlar, ritmik darslar va gimnastika maxsus
+                        ishlab chiqilgan dasturga kiritilgan. Ushbu dastur bolalarni o'qitishda eng
+                        samarali natijalarga erishishda yordam beradi.
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md">
+                <img class="third-section-img" src="{% static 'img/smiley-teacher-helping-students-class 2.svg' %}"
+                     alt="smiley-teacher-helping-students-class 2">
+            </div>
+        </div>
+    </div>
+    <div class="my-2"></div>
+    <div class="links links-section-3 text-white">
+        <div class="container links-container links-container-section-3">
+            <div class="link-item row"><a class="link-href-section-3 link-href" href="#" data-scroll="#Section-1">1</a></div>
+            <div class="link-item row"><a class="link-href-section-3 link-href" href="#" data-scroll="#Section-2">2</a></div>
+            <div class="link-item link-active row"><a class="link-href-section-3 link-href" href="#" data-scroll="#Section-3">3</a></div>
+            <div class="link-item row"><a class="link-href-section-3 link-href" href="#" data-scroll="#Section-4">4</a></div>
+            <div class="link-item row"><a class="link-href-section-3 link-href" href="#" data-scroll="#Section-5">5</a></div>
+        </div>
+    </div>
+    <div class="my-3"></div>
+
+    <div class="about-food-div d-flex">
+        <a class="about-food-icon" href="" data-scroll="#Section-4"><img class="about-food-icon-img" src="{% static 'img/about food.svg' %}" alt=""></a>
+        <a class="about-food-link" href="" data-scroll="#Section-4">
+            {% if lang == 'ru' %}
+                Питание
+            {% elif lang == 'en' %}
+                Food
+            {% elif lang == 'uz' %}
+                Ovqatlanish
+            {% endif %}
+        </a>
+    </div>
+    <div class="mb-5"></div>
+</div>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FOURTH CONTENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<div class="section-page-4" id="Section-4">
+    <div class="my-5"></div>
+    <div class="about-food-heading">
+        <h2>
+            {% if lang == 'ru' %}
+                Питание
+            {% elif lang == 'en' %}
+                Food
+            {% elif lang == 'uz' %}
+                Ovqatlanish
+            {% endif %}
+        </h2>
+    </div>
+    <div class="description-food" style="">
+        <p class="p-5">
+            {% if lang == 'ru' %}
+                Питание в школе производится в строго установленном режиме.
+                3-х разовое питание включает в себя разновидности каш, свежеприготовленных
+                горячих блюд, выпечки, разнообразия салатов, овощей и фруктов.
+                Важно подметить, что за правильным рационом питания следит команда специалистов,
+                а во время трапезы ученики находятся под надзором
+                (мы следим за тем, чтобы все детки доедали). Для приготовления пищи у нас используются
+                свежие продукты, а повара готовят еду с любовью и со вкусом.
+                <br><br>
+                Также для интересующихся готовкой детей у нас в школе скоро открывается фитобар и
+                доступны уроки кулинарии.
+            {% elif lang == 'en' %}
+                Meal consuming in our school is strictly scheduled. Food ration includes majority of
+                cereals, freshly prepared dishes, a variety of salads, vegetables and fruits. It is
+                important to note that a team of specialists monitor healthy nutrition. We use solely
+                fresh ingredients for cooking, and our staff prepares food with love and a great
+                enthusiasm. What is more, for those who are interested in cooking, a juice bar is
+                about to open and cooking lessons are available.
+            {% elif lang == 'uz' %}
+                Maktabda ovqatlanish qat'iy belgilangan rejimda amalga oshiriladi. Kuniga 3 martta
+                ovqatlanish rejimiga turli xil yangi tayyorlangan issiq taomlar, xamir ovqatlar, salatlar,
+                sabzavotlar va mevalar kiradi. Aytib o‘tamizki, mutaxassislar guruhi to'g'ri ovqatlanishni
+                nazorat qiladi. Ovqat pishirish uchun yangi ingredientlardan foydalanamiz va oshpazlarimiz
+                taomlarni mehr bilan tayyorlaydilar.
+                <br><br>
+                Shuningdek, oshpazlikka qiziquvchilar uchun bizning maktabda tez orada fitobar ochiladi
+                va oshpazlik darslari mavjud.
+            {% endif %}
+        </p>
+    </div>
+    <div class="my-2"></div>
+    <div class="links text-white">
+        <div class="container links-container">
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-1">1</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-2">2</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-3">3</a></div>
+            <div class="link-item link-active row"><a class="link-href" href="#" data-scroll="#Section-4">4</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Section-5">5</a></div>
+        </div>
+    </div>
+    <div class="about-event-div d-flex">
+        <a class="about-event-icon" href="" data-scroll="#Section-5"><img class="about-event-icon-img" src="{% static 'img/event.svg' %}" alt=""></a>
+        <a class="about-event-link" href="" data-scroll="#Section-5">
+            {% if lang == 'ru' %}
+                Мероприятия
+            {% elif lang == 'en' %}
+                Social events
+            {% elif lang == 'uz' %}
+                Tadbirlar
+            {% endif %}
+        </a>
+    </div>
+    <div class="mb-5"></div>
+</div>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FIFTH CONTENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<div class="section-page-5" id="Section-5">
+    <div class="my-5"></div>
+    <div class="about-events-heading">
+        <h2>
+            {% if lang == 'ru' %}
+                Мероприятия
+            {% elif lang == 'en' %}
+                Social events
+            {% elif lang == 'uz' %}
+                Tadbirlar
+            {% endif %}
+        </h2>
+    </div>
+    <div class="spacer-div"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <img class="third-section-img" src="{% static 'img/5-section-image.svg' %}"
+                     alt="smiley-teacher-helping-students-class 1">
+            </div>
+            <div class="col desc-section-5-div">
+                <div class="my-3"></div>
+                <p class="desc-section-5">
+                    {% if lang == 'ru' %}
+                        Социальная жизнь школы Salam очень разнообразна и богата.
+                        Всякие мероприятия и праздники позволяют ученикам отдохнуть с пользой.
+                        Походы в горы, посещения театров, галерей и тренингов, организации
+                        праздников идут нашим ученикам только на пользу.
+                        Наблюдая за тем, как усердно детки готовятся к праздникам,
+                        наряжаются в костюмы и работают сообща, нам остается лишь восхищаться
+                        этим энтузиазмом. А главное то, что по окончании они возвращаются к
+                        урокам довольные и полные новой энергии!
+                    {% elif lang == 'en' %}
+                        Social life of Salam School is full of events and vacations. 
+                        This variety of holidays allows students to hang out in proper way. 
+                        Hiking, attending a great deal of theatres and galleries, business 
+                        conferences and trainings, conducting events definitely benefits our 
+                        students' well-being and activeness. You get inspired by the way 
+                        children work cooperatively, organize festivals, get dressed into 
+                        national clothings. The most essential part of those "rituals" is 
+                        that students derive a great pleasure and get back to schooling with 
+                        fresh minds and new sources of unfailing energy.
+                    {% elif lang == 'uz' %}
+                        Salam maktabining ijtimoiy hayoti tadbirlarga juda boy. Har xil bayramlar
+                        va ta'tillar o'quvchilarga foyda bilan dam olishga imkon beradi. Tog'larda
+                        sayr qilish, teatrlar, galereya va treninglarga tashrif buyurish, tadbirlarni
+                        tashkil etish bizning o'quvchilarimiz uchun foydali va samaralidir. Bolalarning
+                        bayramlarga tayyorlanishini, milliy liboslarga kiyinishini va birgalikda
+                        ishlashini ko'rib, siz hayratda qolasiz! Eng asosiysi esa – shunday ajoyib
+                        hordiqdan keyin ular yangi kuchlarga to'la, darslarga qaytadilar!
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="my-2"></div>
+    <div class="links links-section-3 text-white">
+        <div class="container links-container links-container-section-5">
+            <div class="link-item row"><a class="link-href-section-5 link-href" href="#" data-scroll="#Section-1">1</a></div>
+            <div class="link-item row"><a class="link-href-section-5 link-href" href="#" data-scroll="#Section-2">2</a></div>
+            <div class="link-item link-active row"><a class="link-href-section-3 link-href" href="#" data-scroll="#Section-3">3</a></div>
+            <div class="link-item row"><a class="link-href-section-5 link-href" href="#" data-scroll="#Section-4">4</a></div>
+            <div class="link-item link-active-section-5 row"><a class="link-href-section-5 link-href" href="#" data-scroll="#Section-5">5</a></div>
+        </div>
+    </div>
+</div>

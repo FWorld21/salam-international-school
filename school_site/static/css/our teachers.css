@@ -1,0 +1,54 @@
+main {
+    padding-top: 86px;
+    background: #002F61;
+}
+
+.teacher-card {
+    background: #FFFFFF;
+    padding: 15%;
+    border-radius: 10px;
+}
+
+.name-of-teacher {
+    color: #002F61;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.spacer-teachers {
+    margin-top: 3%;
+}
+
+@media screen and (min-width: 540px) and (max-width: 768px) {
+    .teacher-image {
+        width: 90% !important;
+    }
+    .teacher-col {
+        width: 80% !important;
+        padding-top: 10%;
+    }
+    .row {
+        justify-content: center !important;
+        text-alignment: center !important;
+    }
+    .spacer-teachers {
+        margin-top: 4%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    .teacher-image {
+        width: 100% !important;
+    }
+    .teacher-col {
+        width: 100% !important;
+        padding-top: 10%;
+    }
+    .row {
+        justify-content: center !important;
+        text-alignment: center !important;
+    }
+    .spacer-teachers {
+        margin-top: 0%;
+    }
+}

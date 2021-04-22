@@ -1,0 +1,23 @@
+{% extends 'school_site/base.html' %}
+{% load static %}
+{% block title %}
+    {% if lang == 'ru' %}
+        Заявка на звонок
+    {% elif lang == 'en' %}
+        Call request
+    {% elif lang == 'uz' %}
+        Qo‘ng‘iroq uchun morojaat
+    {% endif %}
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/form page.css' %}">
+    <header>
+        {% include 'school_site/navbar.html' %}
+    </header>
+    <main>
+        {% include 'school_site/form-section.html' %}
+    </main>
+    <footer>
+        {% include 'school_site/footer.html' %}
+    </footer>
+{% endblock %}

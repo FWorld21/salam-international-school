@@ -1,0 +1,21 @@
+{% extends 'school_site/base.html' %}
+{% load static %}
+{% block title %}
+    Salam International
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <header>
+        {% include 'school_site/navbar.html' %}
+    </header>
+    <main>
+        {% include 'school_site/section page.html' %}
+    </main>
+    <footer>
+        {% include 'school_site/footer.html' %}
+    </footer>
+
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

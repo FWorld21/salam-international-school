@@ -1,0 +1,27 @@
+main {
+    padding-top: 0px;
+    background: #002F61;
+}
+
+.form-page-content {
+    background: #002F61;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    margin-top:auto;
+    max-width: 80%;
+    font-family: Bookman Old Style;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: 3px solid #FFFFFF;
+}
+
+@media screen and (min-width: 320px) and (max-width: 517px) {
+    .submit-request {width: 100% !important;}
+}

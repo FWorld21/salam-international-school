@@ -1,0 +1,21 @@
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<div class="d-flex main-footer-block">
+    <div class=" me-auto">
+        <img class="footer-logo" src="{% static 'img/Salam logo colored.svg' %}" alt="Salam logo colored">
+    </div>
+    <div class="text-div mx-auto text-center">
+        <p><span class="small-text">Copyrighted© 2021 “Salam International School” <br>
+            Created by</span> <a href="https://220volt.studio/"><img src="{% static 'img/220volt.studio.svg' %}" alt="220 studio logo"> </a></p>
+    </div>
+    <div class="ms-auto link-div">
+        <a class="social-link" href="">
+            <img class="link-icon" src="{% static 'img/facebook.svg' %}" alt="facebook">
+        </a>
+        <a class="social-link" href="">
+            <img class="link-icon" src="{% static 'img/Instagram.svg' %}" alt="instagram">
+        </a>
+    </div>
+</div>
+{% endblock %}

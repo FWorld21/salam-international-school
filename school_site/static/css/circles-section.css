@@ -1,0 +1,286 @@
+.first-circles-content {
+    background: url("../img/circles background.png");
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-1 {
+    margin-top:auto;
+    max-width: 100%;
+    font-family: Bookman Old Style;
+    color: #FFFFFF;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.links {
+    right: 100px;
+    position: absolute;
+}
+
+.links-container {
+    background: #FFFFFF;
+    list-style-type: none;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    padding: 5px 15px;
+}
+
+.links-container a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.link-item {
+    margin-bottom: 8px;
+}
+
+.link-item:last-child {
+    margin-bottom: 0px;
+}
+
+.link-href:hover {
+    color: #FFFFFF;
+    background: #002F61;
+    border-radius: 20px;
+}
+
+.link-active a {
+    color: #FFFFFF;
+    background: #002F61;
+    border-radius: 20px;
+}
+
+
+
+.links-container-second {
+    background: #FFB300;
+    list-style-type: none;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    padding: 5px 15px;
+}
+
+.links-container-second a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.link-href-second:hover {
+    color: #FFFFFF;
+    background: #002F61;
+    border-radius: 20px;
+}
+
+.link-active-second a {
+    color: #FFFFFF;
+    background: #002F61;
+    border-radius: 20px;
+}
+
+.links-container-third {
+    background: #FFFFFF;
+    list-style-type: none;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    padding: 5px 15px;
+}
+
+.links-container-third a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.link-href-third:hover {
+    color: #000000;
+    background: #FFB300;
+    border-radius: 20px;
+}
+
+.link-active-third a {
+    color: #000000;
+    background: #FFB300;
+    border-radius: 20px;
+}
+
+.arab-lang-div {
+    margin-top:auto;
+}
+
+.arab-lang-icon-img {
+    padding: 5px;
+}
+
+.arab-lang-icon, .arab-lang-link {
+    background: #FFFFFF;
+    color: #002F61;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1920px) {
+    .first-circles-content {background-repeat: round;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .links {right: 50px;}
+}
+
+@media screen and (min-width: 990px) and (max-width: 1144px) {
+    .links {right: 50px;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 994px) {
+    .links {display: none}
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+    .arab-lang-div {padding-top: 5%;}
+}
+
+.second-circles-content {
+    background: url("../img/circles second background.png");
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+}
+
+.description-2 {
+    margin-top:auto;
+    max-width: 100%;
+    font-family: Bookman Old Style;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding-top: 5%;
+    padding-left: 5%;
+    max-width: 80%;
+}
+
+.eng-lang-div {
+    margin-top:auto;
+}
+
+.eng-lang-icon-img {
+    padding: 5px;
+}
+
+.eng-lang-icon, .eng-lang-link {
+    background: #FFB300;
+    color: #002F61;
+    border: 2px solid #FFB300;
+    border-radius: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+@media screen and (min-height: 914px) and (max-height: 1024px) {
+    .second-circles-content {
+        background-position: -150px 0;
+    }
+}
+
+@media screen and (min-height: 832px) and (max-height: 914px) {
+    .second-circles-content {
+        background-position: -200px 0;
+    }
+}
+
+@media screen and (min-height: 760px) and (max-height: 832px) {
+    .second-circles-content {
+        background-position: -300px 0;
+    }
+}
+
+@media screen and (min-height: 400px) and (max-height: 760px) {
+    .second-circles-content {
+        background-position: -500px 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+    .second-circles-content {
+        background-position: -800px 0;
+    }
+}
+
+.third-circles-content {
+    background: url("../img/last circle background.svg");
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.description-3 {
+    max-width: 100%;
+    font-family: Bookman Old Style;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding-top: 5%;
+    padding-left: 5%;
+    max-width: 80%;
+}
+
+.desc-block {
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+
+@media screen and (min-width: 1920px) {
+    .third-circles-content {-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */}
+}
+
+@media screen and (min-width: 1509px) and (max-width: 1709px) {
+    .third-circles-content {background-position: -200px 0;}
+}
+
+@media screen and (min-width: 1302px) and (max-width: 1509px) {
+    .third-circles-content {background-position: -400px 0;}
+}
+
+@media screen and (min-width: 1049px) and (max-width: 1302px) {
+    .third-circles-content {background-position: -600px 0;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1049px) {
+    .third-circles-content {background-position: -700px 0;}
+}
+
+@media screen and (min-width: 700px) and (max-width: 992px) {
+    .third-circles-content {background-position: -500px 0;}
+    .it-img, .text-content {padding-top: 4%;}
+
+@media screen and (min-width: 524px) and (max-width: 700px) {
+    .third-circles-content {background-position: -600px 0;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 524px) {
+    .third-circles-content {background-position: -800px 0;}
+}

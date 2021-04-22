@@ -1,0 +1,216 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/circles-section.css' %}">
+<div class="first-circles-content" id="Circles-1">
+    <div class="description-1 container text-center">
+        <div class="row">
+            <div class="col-lg-5">
+                <img class="it-img" src="{% static 'img/It Pic.png' %}" alt="it pic" style="width: 100%;">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 text-content text-white">
+                <h1>
+                    IT
+                </h1>
+                <p>
+                    {% if lang == 'ru' %}
+                        С учетом того, что IT-сфера является лидирующей индустрией по
+                        миру, в школe "Salam" эта дисциплина изучается как отдельный
+                        предмет. На занятиях дети осваивают основы компьютерной
+                        грамотности, информационной безопасности, обучение работе с
+                        приложениями MS Office и многое другое. Хорошее владение
+                        информационными технологиями является основой повышения качества
+                        образования, а также карьерных возможностей. Ведь всем известно,
+                        что за IT-сферой закреплено огромное будущее и потенциал.
+                    {% elif lang == 'en' %}
+                    With regards to the fact that IT-sphere is considered as a leading
+                        industry all over the world, in "Salam" school it is studied as
+                        a separate discipline. In the classroom, children master
+                        the basics of computer literacy, information security, training
+                        in working with MS Office applications and much more. Impeccable
+                        skills in informational technologies are the basis for improving
+                        the quality of education as well as career opportunities. After
+                        all, everyone knows that the IT sector has a huge future and potential.
+                    {% elif lang == 'uz' %}
+                        IT-soha dunyodagi yetakchi soha ekanligini inobatga olgan holda,
+                        ushbu fan "Salam" maktabida alohida o'rganiladi. Sinfda bolalar
+                        kompyuter savodxonligi, axborot xavfsizligi, MS Office
+                        dasturlari bilan ishlashni va boshqa ko'p narsalarni o'rganadilar.
+                        Axborot texnologiyalarini yaxshi bilishi — bu ta'lim sifatini
+                        hamda martaba imkoniyatlarini oshirish uchun asosdir. Axir, hamma
+                        IT sohasining ulkan kelajak va salohiyatga ega ekanligini biladi.
+                    {% endif %}
+                </p>
+                <div class="py-3"></div>
+
+                {% if lang == 'ru' %}
+                    <a href="{% url 'call-request_ru' %}" class="btn-warning" style="text-decoration: none; color: white !important; padding: 2%; border-radius: 5px;">
+                        Заявка на звонок
+                    </a>
+                {% elif lang == 'en' %}
+                    <a href="{% url 'call-request_en' %}" class="btn-warning" style="text-decoration: none; color: white !important; padding: 2%; border-radius: 5px;">
+                        Call request
+                    </a>
+                {% elif lang == 'uz' %}
+                    <a href="{% url 'call-request_uz' %}" class="btn-warning" style="text-decoration: none; color: white !important; padding: 2%; border-radius: 5px;">
+                        Qo‘ng‘iroq uchun morojaat
+                    </a>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="links text-white">
+        <div class="container links-container">
+            <div class="link-item link-active row"><a class="link-href" href="#">1</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Circles-2">2</a></div>
+            <div class="link-item row"><a class="link-href" href="#" data-scroll="#Circles-3">3</a></div>
+        </div>
+    </div>
+
+    <div class="arab-lang-div d-flex">
+        <a class="arab-lang-icon" href="" data-scroll="#Circles-2"><img class="arab-lang-icon-img" src="{% static 'img/arab lang.svg' %}" alt=""></a>
+        <a class="arab-lang-link" href="" data-scroll="#Circles-2">Арабский язык</a>
+    </div>
+    <div class="mb-5"></div>
+</div>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SECOND CONTENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<div class="second-circles-content" id="Circles-2">
+    <div class="description-2 container text-center">
+        <div class="row">
+            <div class="col-lg-5 text-content" style="color: #002F61;">
+                <h2>
+                    {% if lang == 'ru' %}
+                        Арабский язык
+                    {% elif lang == 'en' %}
+                        Arabic
+                    {% elif lang == 'uz' %}
+                        Arab tili
+                    {% endif %}
+                </h2>
+                <p>
+                    {% if lang == 'ru' %}
+                        Когда речь заходит об Арабском языке, то важно отметить, что он включен
+                        в школьную программу и также изучается в кружках.
+                        <br><br>
+                        Изучение арабского – это не только заучивание алфавита, грамматики и
+                        языковых норм, но и получение достойного нравственного воспитания,
+                        присущего культуре восточного мира. Этих концепций придерживаются и
+                        в школе "Salam".
+                        <br><br>
+                        Оснований изучать данный язык достаточно много: во-первых, этот язык
+                        является средством богослужения Ислама. Во-вторых, в Западном мире
+                        наблюдается дефицит специалистов по знанию данного языка и его культуры.
+                        А это дарит носителям языка огромные карьерные, финансовые и
+                        межкультурные перспективы.
+                    {% elif lang == 'en' %}
+                        When it comes to Arabic, it is significant to note that this discipline
+                        is included into school curriculum as well as studied during extra lessons.
+                        <br><br>
+                        Mastering Arabic is not solely studying alphabet, grammar and language
+                        concepts, but also acquiring proper upbringing which is the main
+                        characteristic of Eastern culture. Those conceptions are also kept in
+                        "Salam" school.
+                        <br><br>
+                        There are many reasons to study this language: firstly, this language
+                        is a tool of worshiping Islam. Secondly, there is a shortage of
+                        specialists in the knowledge of this language and its culture in the
+                        Western world. And this gives huge career, financial and intercultural
+                        prospects for those who can speak Arabic.
+                    {% elif lang == 'uz' %}
+                        Arab tili maktab o'quv dasturiga kiritilgan va to'garaklarda alohida
+                        o'rganililadi.
+                        <br><br>
+                        Arab tilini o'rganish nafaqat alifbo, grammatika va til ko‘nikmalarini
+                        bilib olish, balki Sharq dunyosi madaniyatiga xos munosib va go‘zal
+                        axloqqa o‘rganishdir. Ushbu kontsepsiyalarga "Salam" maktabi ham rioya qiladi.
+                        <br><br>
+                        Shbu tilni o'rganish uchun ko'p sabablar bor: birinchidan, bu til Islomga
+                        sig'inish vositasidir. Ikkinchidan, G'arb dunyosida ushbu til va uning
+                        madaniyatini biladigan mutaxassislar etishmayapti. Va bu ona tilida
+                        so'zlashuvchilarga katta martaba, moliyaviy va madaniyatlararo
+                        istiqbollarni beradi.
+                        <br><br>
+                        Ushbu tilni o'rganish uchun juda ko'p sabablar mavjud: birinchidan,
+                        bu til Islomga sig'inish vositasidir. Ikkinchidan, G'arb dunyosida ushbu
+                        til va uning madaniyatini biladigan mutaxassislar yetishmaydi.
+                        Bu Arab tilini bilganlar uchun katta martaba, moliyaviy va madaniyatlararo
+                        istiqbollarni beradi.
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <img src="{% static 'img/arab lang second.svg' %}" alt="arab lang second" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="links text-white">
+        <div class="container links-container-second">
+            <div class="link-item row"><a class="link-href-second" href="#" data-scroll="#Circles-1">1</a></div>
+            <div class="link-item link-active-second row"><a class="link-href-second" href="#" data-scroll="#Circles-2">2</a></div>
+            <div class="link-item row"><a class="link-href-second" href="#" data-scroll="#Circles-3">3</a></div>
+        </div>
+    </div>
+    <div class="my-3"></div>
+    <div class="eng-lang-div d-flex">
+        <a class="eng-lang-icon" href="" data-scroll="#Circles-3"><img class="eng-lang-icon-img" src="{% static 'img/ABC.svg' %}" alt=""></a>
+        <a class="eng-lang-link" href="" data-scroll="#Circles-3">Английский язык</a>
+    </div>
+    <div class="mb-5"></div>
+</div>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! THIRD CONTENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<div class="third-circles-content" id="Circles-3">
+    <div class="description-3 container text-center">
+        <div class="row">
+            <div class="col-lg-5 desc-block text-content" style="color: #002F61;">
+                <div class="py-2"></div>
+                <h2>
+                    {% if lang == 'ru' %}
+                        Английский язык
+                    {% elif lang == 'en' %}
+                        English
+                    {% elif lang == 'uz' %}
+                        Ingliz tili
+                    {% endif %}
+                </h2>
+                <p>
+                    {% if lang == 'ru' %}
+                        Для школьников английский язык в нашей школе уже почти стал родным языком!
+                        Дети настолько к нему привыкли, что больше не удивляются, услышав язык на
+                        уроках и переменах. Для детей у нас веселый интерактив: примеры с яркими
+                        картинками, распевание и заучивание песен. Для подростков программа языка
+                        уже более усложнена, ведь со временем в изучение добавляется самое интересное
+                        и любимое: практика разговорного языка и навыков теста IELTS, проведение дебатов.
+                        Это все способствует развитию не только языка, но и кругозора Вашего ребенка.
+                    {% elif lang == 'en' %}
+                        English in our school is perceived as a native language. For children, we
+                        offer engaging interactive lessons by illustrating vivid pictures and memorizing
+                        songs. For adolescents, the language program gets more complicated, because over
+                        time, the most interesting and favorite stuff is added to the studies: the practice
+                        of spoken language and IELTS test skills, debates. This all contributes to the
+                        development of language and broadens horizon.
+                    {% elif lang == 'uz' %}
+                        Bizning o'quvchilar ingliz tilida deyarli ona tili kabi gaplashmoqda! Hattoki,
+                        tanaffusda ham ingliz tilida so'zlashmoqdа. Faqatgina bizda bolajonlar uchun
+                        qiziqarli darslar, quvnoq jamoa, hush kayfiyat va interaktiv mashg'ulotlar.
+                        Yuqori sinf o'quvchilari uchun til o‘rganish dasturi yanada chuqurlashtiriladi.
+                        Chunki vaqt o'tishi ingliz tilida yanada ko'proq va barcha hissiyotlarni ifodalash
+                        kerak bo'ladi. Shuning uchun, og'zaki nutq amaliyoti va IELTS test ko'nikmalari,
+                        "debat"lar o'tkaziladi. Bularning barchasi nafaqat tilni, balki bolangizning dunyo
+                        qarashi rivojlanishiga yordam beradi
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="links text-white">
+        <div class="container-third links-container">
+            <div class="link-item row"><a class="link-href-third" href="#" data-scroll="#Circles-1">1</a></div>
+            <div class="link-item row"><a class="link-href-third" href="#" data-scroll="#Circles-2">2</a></div>
+            <div class="link-item link-active-third row"><a class="link-href-third" href="#" data-scroll="#Circles-3">3</a></div>
+        </div>
+    </div>
+</div>
